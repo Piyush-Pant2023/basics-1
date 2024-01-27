@@ -1,0 +1,25 @@
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(to right, rgb(20, 14, 15),blue,rgb(240, 20, 20));
+    position: relative;
+    animation: move 10s linear infinite;
+  }
+  
+  @keyframes move {
+    100%{
+      transform: translate(0, 0);
+    }
+    80% {
+      transform: translate(200px, 0);
+    }
+    100% {
+      transform: translate(200px, 200px);
+    }
+    75% {
+      transform: translate(0, 200px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
